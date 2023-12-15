@@ -7,7 +7,7 @@ package:
 
 source:
    url: https://github.com/noaa-ocs-s100/s100py/archive/refs/tags/v{{ version }}.tar.gz
-   sha256: 727b87b4d61d9cbe41249862ac1902adab4db3162b6f7c2c9810439697f70d73
+   sha256: 8f51767408ffff1ab2207570114060b6ab6387a0720b94a0dacf4625a49a2301
 
 build:
   noarch: python
