@@ -12,21 +12,23 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - h5py
     - numpy
     - gdal >=3.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - s100py
 
