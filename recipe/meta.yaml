@@ -1,13 +1,13 @@
 {% set name = "s100py" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-   url: https://github.com/noaa-ocs-s100/s100py/archive/refs/tags/v{{ version }}.tar.gz
-   sha256: f968bb74acba710e54a691a88f6090bc512eed9f6a86f493ec6aabc572c45cd2
+  url: https://github.com/noaa-ocs-s100/s100py/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 3b3bfeab72ab7edd1cab3a66802ba991cbb15959aa8e74b4f53d89e716bcbbc0
 
 build:
   noarch: python
